@@ -2,87 +2,82 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib...">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>Portifolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Seu estilo -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio</title>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <span>felipe</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"=""><a
-                        href="">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="">About</a>
-                </div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="">Skills</a>
-                </div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
-                        href="">Service</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
-                        href="">Contact</a></div>
-            </div>
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+        <span>Felipe</span>
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Service</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+      </div>
+    </div>
+
+    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    <div class="dropdown" id="menuDropdown">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Service</a>
+      <a href="#">Contact</a>
+      <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+  </nav>
+
+  <section>
+    <div class="main-container">
+      <div class="image" data-aos="zoom-in-right" data-aos-duration="3000">
+        <img src="main.png" alt="" />
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Olá eu sou <span>Felipe</span></h1>
+        <h2 class="typing-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">Sou um <span></span>
+        </h2>
+        <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis magnam velit maiores dolores? Praesentium rem expedita libero corporis iure sed recusandae? Commodi quae qui cupiditate nisi impedit voluptatibus rerum!
+        </p>
+        <div class="social-links">
+          <a href="#" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        <div class="dropdown">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Service</a>
-            <a href="">Contact</a>
-            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
+          <button>Download CV</button>
         </div>
-    </nav>
-    <section>
-        <div class="main-container">
-            <div class="image" data-aos="zoom-in-right" data-aos-duration="3000">
-                <img src="main.png" alt="">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>felipe</span></h1>
-                <h2 class="typing-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">I'm a
-                    <span></span>
-                </h2>
-                <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Nisi aliquam beatae corrupti non, porro
-                    animi ipsa velit fugit nulla magnam quaerat ab distinctio exercitationem! Explicabo a aliquam nisi
-                    repudiandae pariatur.</p>
-                <div class="social-links">
-                    <a href="" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i
-                            class="fa-brands fa-twitter"></i></a>
-                </div>
-                <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
-                    <button>Download CV</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ offset: 0 });
-    </script>
-    <script>
-        function hamburg() {
-            const navbar = document.querySelector("dropdown")
-            navbar.style.transform = "translateY(0px)"
-        }
-        function cancel() {
-            const navbar = document.querySelector("dropdown")
-            navbar.style.transform = "translateY(-400px)"
-        }
-    </script>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+
+    function hamburg() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(-400px)";
+    }
+  </script>
 </body>
 
 </html>
