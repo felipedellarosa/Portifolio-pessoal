@@ -1,25 +1,30 @@
+/* Importa fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
 
+/* Reset básico de estilo para todos os elementos */
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
+    box-sizing: border-box; /* Inclui padding e border no cálculo das dimensões */
 }
 
+/* Estiliza o corpo da página */
 body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: black;
+    overflow: hidden; /* Remove barra de rolagem */
+    background-color: black; /* Fundo preto */
 }
 
+/* Barra de navegação principal */
 nav {
     width: 100%;
-    height: 10vh;
-    position: sticky;
+    height: 10vh; /* 10% da altura da viewport */
+    position: sticky; /* Fixa no topo ao rolar */
 }
 
+/* Container da navegação */
 .nav-container {
     width: 100%;
     height: 100%;
@@ -28,12 +33,14 @@ nav {
     align-items: center;
 }
 
+/* Logo do site */
 .nav-container .logo span {
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(84, 87, 238);
+    color: rgb(84, 87, 238); /* Azul-violeta */
 }
 
+/* Ícones do menu hamburguer (abrir) e cancel (fechar) */
 .hamburg,
 .cancel {
     cursor: pointer;
@@ -41,14 +48,16 @@ nav {
     right: 15px;
     top: 10px;
     color: white;
-    font-size: clamp(2.5rem, 0.5rem +5vw, 3rem);
-    display: none;
+    font-size: clamp(2.5rem, 0.5rem +5vw, 3rem); /* Tamanho responsivo */
+    display: none; /* Só aparecem em mobile */
 }
 
+/* Container dos links da navegação */
 .nav-container .links {
     display: flex;
 }
 
+/* Links da navegação */
 .nav-container .links a {
     font-size: 1.2rem;
     color: white;
@@ -58,22 +67,25 @@ nav {
     transition: 0.3s linear;
 }
 
+/* Efeito hover nos links */
 .nav-container .links a:hover {
     color: rgb(84, 87, 238);
     border-bottom: 2px solid rgb(84, 87, 238);
 }
 
+/* Menu dropdown para navegação mobile */
 .dropdown {
     z-index: 10;
     position: absolute;
-    transform: translateY(-400px);
+    transform: translateY(-400px); /* Começa oculto acima da tela */
     width: 100%;
     height: auto;
-    backdrop-filter: blur(5px) brightness(40%);
+    backdrop-filter: blur(5px) brightness(40%); /* Desfoque e escurecimento */
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
 
+/* Links dentro do dropdown */
 .dropdown a {
     display: flex;
     color: white;
@@ -84,16 +96,18 @@ nav {
     transition: 0.3s linear;
 }
 
+/* Hover nos links do menu mobile */
 .dropdown a:hover {
     background-color: rgb(84, 87, 238);
-
 }
 
+/* Seção principal do conteúdo */
 section {
     width: 100%;
-    height: 90vh;
+    height: 90vh; /* Ocupar o restante da viewport */
 }
 
+/* Container principal (imagem + conteúdo) */
 .main-container {
     width: 100%;
     height: 100%;
@@ -102,62 +116,70 @@ section {
     align-items: center;
 }
 
+/* Área da imagem principal */
 .main-container .image {
     width: 500px;
     height: 80vh;
     overflow: hidden;
 }
 
+/* Imagem dentro do container */
 .main-container .image img {
     width: 100%;
 }
 
+/* Animação de pulsar ao passar o mouse */
 .main-container .image img:hover {
     animation: animate 1.5s ease-in-out infinite;
 }
 
+/* Animação da imagem (pulsando) */
 @keyframes animate {
     0% {
         scale: 1;
     }
-
     50% {
         scale: 1.05;
     }
-
     100% {
         scale: 1;
     }
 }
 
+/* Container de conteúdo textual */
 .main-container .content {
     color: white;
     width: 40%;
     min-height: 100px;
 }
 
+/* Título principal */
 .content h1 {
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 
+/* Destaque em parte do título */
 .content h1 span {
     font-weight: 700;
     text-shadow: 0 0 10px rgb(84, 87, 238);
     color: rgb(84, 87, 238);
 }
 
+/* Texto com animação de digitação */
 .typing-text {
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 700;
     position: relative;
 }
 
+/* Texto animado (palavras mudando) */
 .typing-text span::before {
     content: "";
     color: rgb(84, 87, 238);
     animation: words 20s infinite;
 }
 
+/* Cursor que pisca ao lado do texto */
 .typing-text span::after {
     content: "";
     background-color: black;
@@ -169,45 +191,39 @@ section {
     animation: cursor 0.5s infinite;
 }
 
+/* Animação do cursor (pisca) */
 @keyframes cursor {
     to {
         border-left: 3px solid white;
     }
 }
 
+/* Alternância entre palavras */
 @keyframes words {
-
-    0%,
-    20% {
+    0%, 20% {
         content: "Programador";
     }
-
-    21%,
-    40% {
+    21%, 40% {
         content: "Desenvolvedor";
     }
-
-    41%,
-    60% {
+    41%, 60% {
         content: "Programador";
     }
-
-    61%,
-    80% {
+    61%, 80% {
         content: "Desenvolvedor";
     }
-
-    81%,
-    100% {
+    81%, 100% {
         content: "Programador";
     }
 }
 
+/* Parágrafo */
 .content p {
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
 
+/* Ícones das redes sociais */
 .social-links i {
     display: inline-flex;
     justify-content: center;
@@ -223,6 +239,7 @@ section {
     transition: 0.2s linear;
 }
 
+/* Hover nos ícones */
 .social-links i:hover {
     scale: 1.3;
     filter: drop-shadow(0 0 10px rgb(84, 87, 238));
@@ -230,6 +247,7 @@ section {
     color: white;
 }
 
+/* Botão principal */
 .content button {
     width: 50%;
     height: 6vh;
@@ -244,6 +262,7 @@ section {
     transition: 0.2s linear;
 }
 
+/* Efeito hover no botão */
 .content button:hover {
     scale: 1.1;
     color: rgb(84, 87, 238);
@@ -252,8 +271,8 @@ section {
     box-shadow: 0 0 40px 5px;
 }
 
+/* Responsividade para telas menores que 884px */
 @media(max-width:884px) {
-
     nav.logo {
         position: absolute;
         top: 16px;
@@ -262,17 +281,16 @@ section {
     }
 
     .main-container {
-        display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Empilha os elementos */
     }
 
     .nav-container .links {
-        display: none;
+        display: none; /* Esconde os links */
     }
 
     .hamburg,
     .cancel {
-        display: block;
+        display: block; /* Mostra os botões de menu */
     }
 
     .main-container .content {
@@ -297,6 +315,7 @@ section {
     }
 }
 
+/* Responsividade para telas menores que 440px */
 @media(max-width:440px) {
     .main-container .image {
         width: 70%;
