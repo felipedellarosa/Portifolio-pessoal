@@ -31,7 +31,7 @@ nav{
 .nav-container .logo span{
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(red, green, blue);
+    color: rgb(159, 18, 18);
 }
 
 .hamburg,
@@ -41,4 +41,34 @@ nav{
     right: 15px;
     top: 10px;
     color: white;
+    font-size: clamp(2.5rem, 0.5rem +5vw, 3rem);
+    display: none;
+}
+
+.nav-container .links{
+    display: flex;
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    margin:0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: rgb(red, green, blue);
+    border-bottom: 2px solid rgb(159, 18, 18);
+}
+
+.dropdown{
+    z-index: 10;
+    position: absolute;
+    transform: translateY(0px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(5px) brightness(40%);
+    box-shadow: 0 0 20px black;
 }
