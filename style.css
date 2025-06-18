@@ -121,6 +121,8 @@ section {
     width: 500px;
     height: 80vh;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(25, 153, 238, 0.5);
+    border-radius: 50%;
 }
 
 /* Imagem dentro do container */
