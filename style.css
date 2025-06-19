@@ -61,18 +61,36 @@ nav {
 
 /* Links da navegação */
 .nav-container .links a {
+    position: relative; /* Necessário para o ::after funcionar corretamente */
     font-size: 1.2rem;
     color: white;
     margin: 0 20px;
     text-decoration: none;
     font-weight: 550;
-    transition: 0.3s linear;
+    transition: color 0.3s linear;
 }
 
-/* Efeito hover nos links */
+/* Linha animada abaixo do link */
+.nav-container .links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: rgb(84, 87, 238);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgb(84, 87, 238);
+}
+
+/* Efeito ao passar o mouse */
 .nav-container .links a:hover {
     color: rgb(84, 87, 238);
-    border-bottom: 2px solid rgb(84, 87, 238);
+}
+
+.nav-container .links a:hover::after {
+    width: 100%;
 }
 
 /* Menu dropdown para navegação mobile */
