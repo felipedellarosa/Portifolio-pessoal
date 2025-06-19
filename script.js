@@ -44,3 +44,8 @@ function eraseText(){
 }
 
 window.onload = typeWriter;
+
+const cursor = document.getElementById('cursor');
+setInterval(() => {
+    cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
+}, 500);

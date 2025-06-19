@@ -134,10 +134,10 @@ section {
     height: 500px;
 }
 
-/* Animação de pulsar ao passar o mouse 
+/* Animação de pulsar ao passar o mouse */
 .main-container .image img:hover {
     animation: animate 1.5s ease-in-out infinite;
-}*/
+}
 /* Container de conteúdo textual */
 .main-container .content {
     color: white;
@@ -176,12 +176,10 @@ section {
     text-shadow: 0 0  10px rgb(84, 87, 238);
 }
 
-
-/* Animação do cursor (pisca) */
-@keyframes cursor {
-    to {
-        border-left: 3px solid white;
-    }
+#cursor {
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 /* Parágrafo */
