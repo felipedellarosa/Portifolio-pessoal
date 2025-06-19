@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- Início da barra de navegação -->
+ <!-- Início da barra de navegação -->
   <nav>
     <div class="nav-container">
       <!-- Logo animada com AOS -->
@@ -21,14 +21,10 @@
 
       <!-- Links de navegação no desktop -->
       <div class="links">
-        <!-- Cada link com animação AOS e delays diferentes -->
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a>
-        </div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#sobre">Sobre</a>
-        </div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projetos</a>
-        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#sobre">Sobre</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#habilidades">Habilidades</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projetos</a></div>
         <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contato</a></div>
       </div>
     </div>
@@ -38,13 +34,11 @@
 
     <!-- Menu dropdown para mobile -->
     <div class="dropdown" id="menuDropdown">
-      <a href="#">Home</a>
-      <a href="#">Sobre</a>
-      <a href="#">Skills</a>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
       <a href="#">Projetos</a>
       <a href="#">Contato</a>
-
-      <!-- Ícone para fechar o menu -->
       <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
     </div>
   </nav>
@@ -52,17 +46,12 @@
   <!-- Seção principal do site -->
   <section id="home">
     <div class="main-container">
-
       <!-- Links para redes sociais com ícones e animações -->
       <div class="social-links">
-        <a href="#" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/felipedellarosa" data-aos="zoom-out" data-aos-duration="1500"
-          data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
-            class="fa-brands fa-instagram"></i></a>
-        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i
-            class="fa-brands fa-twitter"></i></a>
+        <a href="#" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/felipedellarosa" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-twitter"></i></a>
       </div>
 
       <!-- Imagem com animação -->
@@ -72,31 +61,27 @@
 
       <!-- Conteúdo textual e interativo -->
       <div class="content">
-        <!-- Título principal com destaque em <span> -->
         <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">
           Olá, eu sou <span>Felipe</span>
         </h1>
 
-        <!-- Subtítulo com animação de texto -->
         <div class="typewriter" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">
           Eu sou <span class="typewriter-text"></span><span id="cursor">|</span>
         </div>
 
-
-        <!-- Parágrafo com efeito flip-up -->
         <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis magnam velit maiores dolores?
           Praesentium rem expedita libero corporis iure sed recusandae? Commodi quae qui cupiditate nisi impedit
           voluptatibus rerum!
         </p>
 
-        <!-- Botão para download de currículo -->
         <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
           <button>Download CV</button>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Seção Sobre -->
   <section id="sobre">
     <div class="section-container">
@@ -121,10 +106,65 @@
       </div>
     </div>
   </section>
+
+  <!-- Seção Skills -->
+  <section id="habilidades">
+    <div class="skills-container">
+      <h2 class="section-title" data-aos="fade-up">Minhas Habilidades</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-item" data-skill="git" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+          <i class="fab fa-git-alt skill-icon"></i>
+          <span class="skill-name">Git</span>
+        </div>
+
+        <div class="skill-item" data-skill="github" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+          <i class="fab fa-github skill-icon"></i>
+          <span class="skill-name">GitHub</span>
+        </div>
+
+        <div class="skill-item" data-skill="html" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+          <i class="fab fa-html5 skill-icon"></i>
+          <span class="skill-name">HTML5</span>
+        </div>
+
+        <div class="skill-item" data-skill="css" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <span class="skill-name">CSS3</span>
+        </div>
+
+        <div class="skill-item" data-skill="bootstrap" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+          <i class="fab fa-bootstrap skill-icon"></i>
+          <span class="skill-name">Bootstrap</span>
+        </div>
+
+        <div class="skill-item" data-skill="php" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+          <i class="fab fa-php skill-icon"></i>
+          <span class="skill-name">PHP</span>
+        </div>
+
+        <div class="skill-item" data-skill="phpmyadmin" data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">
+          <i class="fas fa-database skill-icon"></i>
+          <span class="skill-name">phpMyAdmin</span>
+        </div>
+
+        <div class="skill-item" data-skill="python" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
+          <i class="fab fa-python skill-icon"></i>
+          <span class="skill-name">Python</span>
+        </div>
+
+        <div class="skill-item" data-skill="javascript" data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">
+          <i class="fab fa-js-square skill-icon"></i>
+          <span class="skill-name">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
     // Inicializa o AOS com offset 0 para começar imediatamente
     AOS.init({ offset: 0 });
   </script>
