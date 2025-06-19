@@ -134,24 +134,10 @@ section {
     height: 500px;
 }
 
-/* Animação de pulsar ao passar o mouse */
+/* Animação de pulsar ao passar o mouse 
 .main-container .image img:hover {
     animation: animate 1.5s ease-in-out infinite;
-}
-
-/* Animação da imagem (pulsando) */
-@keyframes animate {
-    0% {
-        scale: 1;
-    }
-    50% {
-        scale: 1.05;
-    }
-    100% {
-        scale: 1;
-    }
-}
-
+}*/
 /* Container de conteúdo textual */
 .main-container .content {
     color: white;
@@ -195,47 +181,6 @@ section {
 @keyframes cursor {
     to {
         border-left: 3px solid white;
-    }
-}
-
-/* Alternância entre palavras */
-@keyframes words {
-    0%, 20% {
-        content: "Programador";
-    }
-    21%, 40% {
-        content: "Desenvolvedor";
-    }
-    41%, 60% {
-        content: "Programador";
-    }
-    61%, 80% {
-        content: "Desenvolvedor";
-    }
-    81%, 100% {
-        content: "Programador";
-    }
-}
-
-@keyframes mark {
-
-    50%{
-        border-bottom-color: transparent;
-    }
-}
-
-@keyframes writer{
-    20%{
-        width: 26.5ch;
-    }
-    70%{
-        width: 26.5ch;
-    }
-    85%{
-        width: 0;
-    }
-    100%{
-        width: 0;
     }
 }
 
@@ -291,64 +236,4 @@ section {
     border: 2px solid rgb(84, 87, 238);
     background-color: transparent;
     box-shadow: 0 0 40px 5px;
-}
-
-/* Responsividade para telas menores que 884px */
-@media(max-width:884px) {
-    nav.logo {
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
-    .main-container {
-        flex-direction: column; /* Empilha os elementos */
-    }
-
-    .nav-container .links {
-        display: none; /* Esconde os links */
-    }
-
-    .hamburg,
-    .cancel {
-        display: block; /* Mostra os botões de menu */
-    }
-
-    .main-container .content {
-        width: 80%;
-        margin-top: -40px;
-    }
-
-    .social-links {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .typing-text {
-        font-size: 2rem;
-    }
-
-    .main-container .image {
-        z-index: -1;
-        width: 50%;
-        height: 60%;
-    }
-}
-
-/* Responsividade para telas menores que 440px */
-@media(max-width:440px) {
-    .main-container .image {
-        width: 70%;
-        height: 60%;
-    }
-
-    .main-container .content {
-        width: 80%;
-    }
-
-    .main-container button {
-        margin-top: 15px;
-    }
 }
