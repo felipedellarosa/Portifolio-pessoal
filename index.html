@@ -21,13 +21,11 @@
 
       <!-- Links de navegação no desktop -->
       <div class="links">
-        <!-- Cada link com animação AOS e delays diferentes -->
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">Sobre</a></div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projetos</a>
-        </div>
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contato</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#sobre">Sobre</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projetos">Projetos</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contato">Contato</a></div>
       </div>
     </div>
 
@@ -36,36 +34,30 @@
 
     <!-- Menu dropdown para mobile -->
     <div class="dropdown" id="menuDropdown">
-      <a href="#">Home</a>
-      <a href="#">Sobre</a>
-      <a href="#">Skills</a>
-      <a href="#">Projetos</a>
-      <a href="#">Contato</a>
-
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
       <!-- Ícone para fechar o menu -->
       <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
     </div>
   </nav>
 
-  <!-- Seção principal do site -->
-  <section>
+  <!-- Links para redes sociais -->
+  <div class="social-links">
+    <a href="#" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/felipedellarosa" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-twitter"></i></a>
+  </div>
+
+  <!-- Seção Home -->
+  <section id="home">
     <div class="main-container">
-
-      <!-- Links para redes sociais com ícones e animações -->
-      <div class="social-links">
-        <a href="#" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/felipedellarosa" data-aos="zoom-out" data-aos-duration="1500"
-          data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
-            class="fa-brands fa-instagram"></i></a>
-        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i
-            class="fa-brands fa-twitter"></i></a>
-      </div>
-
       <!-- Imagem com animação -->
       <div class="image" data-aos="zoom-in-right" data-aos-duration="3000">
-        <img src="main.jpg" alt="" />
+        <img src="main.jpg" alt="Felipe Dellarosa" />
       </div>
 
       <!-- Conteúdo textual e interativo -->
@@ -80,28 +72,337 @@
           Eu sou <span class="typewriter-text"></span><span id="cursor">|</span>
         </div>
 
-
         <!-- Parágrafo com efeito flip-up -->
         <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis magnam velit maiores dolores?
-          Praesentium rem expedita libero corporis iure sed recusandae? Commodi quae qui cupiditate nisi impedit
-          voluptatibus rerum!
+          Desenvolvedor apaixonado por tecnologia e inovação. Especializado em criar soluções digitais modernas e eficientes, sempre buscando entregar a melhor experiência para o usuário.
         </p>
 
         <!-- Botão para download de currículo -->
         <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
-          <button>Download CV</button>
+          <button onclick="downloadCV()">Download CV</button>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <div class="section-container">
+      <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+      <div class="about-content">
+        <div data-aos="fade-right" data-aos-duration="1500">
+          <img src="main.jpg" alt="Felipe trabalhando" class="about-image">
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+          <h3>Desenvolvedor Full Stack</h3>
+          <p>
+            Sou um desenvolvedor apaixonado por criar experiências digitais únicas e funcionais. Com experiência em desenvolvimento front-end e back-end, estou sempre em busca de novos desafios e tecnologias emergentes.
+          </p>
+          <p>
+            Minha jornada na programação começou há alguns anos, e desde então tenho me dedicado a aprender e aplicar as melhores práticas de desenvolvimento. Acredito que a tecnologia pode transformar vidas e empresas, e é isso que me motiva todos os dias.
+          </p>
+          <p>
+            Quando não estou codando, gosto de estudar novas tecnologias, contribuir para projetos open source e compartilhar conhecimento com a comunidade de desenvolvedores.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Skills -->
+  <section id="skills">
+    <div class="section-container">
+      <h2 class="section-title" data-aos="fade-up">Minhas Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skills-list">
+            <span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">React</span>
+            <span class="skill-item">Vue.js</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">Sass</span>
+          </div>
+        </div>
+        
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skills-list">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">PHP</span>
+            <span class="skill-item">Express</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">Laravel</span>
+            <span class="skill-item">REST APIs</span>
+          </div>
+        </div>
+        
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="fas fa-database"></i> Database</h3>
+          <div class="skills-list">
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">Redis</span>
+            <span class="skill-item">Firebase</span>
+          </div>
+        </div>
+        
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+          <div class="skills-list">
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">Webpack</span>
+            <span class="skill-item">Jest</span>
+            <span class="skill-item">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Projetos -->
+  <section id="projetos">
+    <div class="section-container">
+      <h2 class="section-title" data-aos="fade-up">Meus Projetos</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-info">
+            <h3>E-commerce Platform</h3>
+            <p>Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de produtos.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-info">
+            <h3>Task Manager App</h3>
+            <p>Aplicativo de gerenciamento de tarefas com funcionalidades de colaboração em equipe e notificações em tempo real.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-info">
+            <h3>Dashboard Analytics</h3>
+            <p>Dashboard interativo para análise de dados com gráficos dinâmicos e relatórios customizáveis.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">D3.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-image">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <p>Aplicativo de previsão do tempo com geolocalização, múltiplas cidades e alertas meteorológicos.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API REST</span>
+              <span class="tech-tag">PWA</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="project-image">
+            <i class="fas fa-blog"></i>
+          </div>
+          <div class="project-info">
+            <h3>Blog Platform</h3>
+            <p>Plataforma de blog com editor rich text, sistema de comentários e painel de administração completo.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="project-image">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="project-info">
+            <h3>Game Portfolio</h3>
+            <p>Coleção de mini-games desenvolvidos em JavaScript puro, incluindo Snake, Tetris e Pong.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Canvas API</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato">
+    <div class="section-container">
+      <h2 class="section-title" data-aos="fade-up">Entre em Contato</h2>
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="1500">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>felipe.dellarosa@email.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Telefone</h4>
+              <p>+55 (41) 99999-9999</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Localização</h4>
+              <p>Curitiba, Paraná - Brasil</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horário</h4>
+              <p>Seg - Sex: 8:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required placeholder="Digite sua mensagem aqui..."></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="section-container">
+      <p>&copy; 2024 Felipe Dellarosa. Todos os direitos reservados.</p>
+      <p>Desenvolvido com ❤️ e muito ☕</p>
+    </div>
+  </footer>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    // Inicializa o AOS com offset 0 para começar imediatamente
-    AOS.init({ offset: 0 });
+    // Inicializa o AOS
+    AOS.init({ 
+      offset: 100,
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
   </script>
 </body>
 
-</html>
+</html><i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" class="project-link">
