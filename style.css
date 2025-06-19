@@ -568,4 +568,96 @@ section {
         height: 2.5rem;
         font-size: 1.2rem;
     }
-}
+}   /* Seção Contato */
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: start;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(84, 87, 238, 0.1), rgba(84, 87, 238, 0.05));
+        border-radius: 10px;
+        border: 1px solid rgba(84, 87, 238, 0.3);
+        transition: transform 0.3s ease;
+    }
+
+    .contact-item:hover {
+        transform: translateX(10px);
+    }
+
+    .contact-item i {
+        font-size: 1.5rem;
+        color: rgb(84, 87, 238);
+        width: 30px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-group label {
+        color: rgb(84, 87, 238);
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 15px;
+        background: rgba(84, 87, 238, 0.1);
+        border: 1px solid rgba(84, 87, 238, 0.3);
+        border-radius: 8px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        transition: all 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: rgb(84, 87, 238);
+        box-shadow: 0 0 10px rgba(84, 87, 238, 0.3);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        padding: 15px 30px;
+        background: rgb(84, 87, 238);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background: transparent;
+        border: 2px solid rgb(84, 87, 238);
+        color: rgb(84, 87, 238);
+        transform: translateY(-2px);
+    }
