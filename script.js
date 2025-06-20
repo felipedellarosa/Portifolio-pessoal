@@ -51,7 +51,7 @@ setInterval(() => {
 }, 500);
 function downloadCV() {
     const link = document.createElement('a');
-    link.href = 'cv.pdf'; // nome do seu arquivo
+    link.href = 'curricu'; // nome do seu arquivo
     link.download = 'Curriculo-Felipe-Dellarosa.pdf';
     link.click();
   }
