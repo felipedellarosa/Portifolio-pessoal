@@ -55,3 +55,19 @@ function downloadCV() {
     link.download = 'Curriculo-Felipe-Dellarosa.pdf';
     link.click();
   }
+   // Inicializa EmailJS com sua public key
+  emailjs.init("kZwy3CXZW2FdA9_qV");
+
+  // Captura o submit do formulário
+  document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_3tqhj0e", "template_wx4xfto", this)
+      .then(() => {
+        alert('Mensagem enviada com sucesso!');
+        this.reset();
+      }, (error) => {
+        alert('Erro ao enviar. Verifique os dados e tente novamente.');
+        console.error('Erro:', error);
+      });
+  });
