@@ -1,12 +1,11 @@
-function hamburg(){
-    const navbar = document.querySelector('.dropdown');
-    navbar.style.transform = 'translateY(0px)';
+function hamburg() {
+  document.getElementById('menuDropdown').classList.add('show');
 }
 
-function cancel(){
-    const navbar = document.querySelector('.dropdown');
-    navbar.style.transform = 'translateY(-500px)';
+function cancel() {
+  document.getElementById('menuDropdown').classList.remove('show');
 }
+
 
 const texts = [
     "Desenvolvedor",
