@@ -1,3 +1,4 @@
+
 function hamburg() {
   document.getElementById('menuDropdown').classList.add('show');
 }
@@ -6,6 +7,24 @@ function cancel() {
   document.getElementById('menuDropdown').classList.remove('show');
 }
 
+// Adiciona evento de clique no dropdown para fechar quando clicar em qualquer item
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.getElementById('menuDropdown');
+  
+  if (dropdown) {
+    dropdown.addEventListener('click', function(event) {
+      // Verifica se o clique foi em um elemento clicável (links, botões, etc.)
+      if (event.target.tagName === 'A' || 
+          event.target.tagName === 'BUTTON' || 
+          event.target.classList.contains('menu-item') ||
+          event.target.closest('.menu-item')) {
+        
+        // Fecha o menu
+        cancel();
+      }
+    });
+  }
+});
 
 const texts = [
     "Desenvolvedor",
