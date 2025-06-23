@@ -543,35 +543,7 @@ nav {
     border: 1px solid rgb(84, 87, 238);
     color: rgb(84, 87, 238);
 }
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .social-links {
-        display: none; /* Esconde social links em mobile para evitar conflitos */
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 10px;
-    }
-    
-    .project-card {
-        margin: 0;
-    }
-}
-
-@media (max-width: 1024px) {
-    .social-links {
-        left: 10px; /* Menos espaçamento em tablets */
-    }
-    
-    .social-links i {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.2rem;
-    }
-}   /* Seção Contato */
+  /* Seção Contato */
     .contact-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
