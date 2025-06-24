@@ -893,6 +893,7 @@ footer {
     .section-title {
         font-size: 1.8rem;
         margin-bottom: 25px;
+        padding-top: 50px;
     }
 
     .content .typewriter {
@@ -1000,6 +1001,10 @@ footer {
     }
 
     .section-title {
+        font-size: 1.5rem;
+        padding-top: 100px;
+    }
+    .content .typewriter {
         font-size: 1.5rem;
     }
 
