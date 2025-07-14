@@ -536,7 +536,8 @@ section {
 .project-image img{
     width: 100%;
     height: 100%;
-    
+   object-fit: cover; /* ou 'contain', dependendo do efeito desejado */
+
 }
 
 .project-info {
