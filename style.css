@@ -743,7 +743,7 @@ footer {
 }
 
 /* Medium Devices (tablets, 992px and up) */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .nav-container .logo span {
         font-size: 1.6rem;
     }
@@ -757,6 +757,9 @@ footer {
         font-size: 2.5rem;
     }
 
+    .section-container{
+        padding-top: 100px;
+    }
     .main-container {
         flex-direction: column;
         gap: 30px;
@@ -802,7 +805,7 @@ footer {
 }
 
 /* Small Devices (landscape phones, 768px and up) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
     .hamburg,
     .cancel {
@@ -885,7 +888,7 @@ footer {
 }
 
 /* Extra Small Devices (portrait phones, 576px and down) */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 679px) {
     .nav-container .logo span {
         font-size: 1.2rem;
     }
@@ -1050,38 +1053,3 @@ footer {
     }
 }
 
-/* Landscape orientation adjustments */
-@media screen and (max-height: 600px) and (orientation: landscape) {
-    #home {
-        height: auto;
-        min-height: 100vh;
-        padding: 20px 0;
-    }
-
-    .main-container {
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .main-container .image {
-        width: 200px;
-        height: 200px;
-    }
-
-    .main-container .content {
-        width: 50%;
-    }
-
-    .social-links {
-        position: relative;
-        flex-direction: row;
-        justify-content: center;
-        transform: none;
-        margin: 15px 0;
-    }
-
-    section {
-        margin-top: 40px;
-        padding: 30px 15px;
-    }
-}
